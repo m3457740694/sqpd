@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>排队网站</title>
+
+    <style>body {
+
+           font-family: Arial, sans-serif;
+}
+
+
+button {
+
+    background-color: #4CAF50;
+
+    border: none;
+
+    color: white;
+
+    padding: 15px 32px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    margin: 4px 2px;
+
+    cursor: pointer;
+
+}
+
+
+ul {
+    
+list-style-type: none;
+
+    padding: 0;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>排队网站</h1>
+
+    <button id="joinQueue">加入排队</button>
+
+    <ul id="queueList"></ul>
+
+    <script>
+document.getElementById('joinQueue').addEventListener('click', function()
+ {
+
+      var newItem = document.createElement('li');
+
+    newItem.textContent = '新用户';
+
+    queueList.appendChild(newItem);
+
+});
+    </script>
+
+</body>
+
+</html>
